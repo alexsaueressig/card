@@ -22,7 +22,7 @@ class CardComponent extends HTMLElement {
         </div>
         <div class="card-body">
           <div class="card-body-image">
-            <slot name="image"></slot>
+            <div class="image"><slot name="image"></slot></div>
           </div>
           <div class="card-body-content">
             <slot name="content">This is the card body.</slot>

@@ -1,25 +1,64 @@
-<!--
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card Component</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <!--
 modifiers: --theme-default --size-large --title-xsmall --title-color-red --text-color-blue --horizontal --sm-vertical --reverse-horizontal --reverse-vertical -text-center --items-center --rounded --shadow --bordered --hover --clickable --active --disabled --loading --placeholder --fullwidth --fluid --auto-height --expandable --animated
 -->
+      <card-component class="--theme-red">
+        <span slot="badge">New</span>
+        <span slot="title">Lorem Ipsum Title</span>
+        <span slot="subtitle">Dolor sit amet consectetur adipiscing elit</span>
+        <div slot="header-actions">
+          <button>Edit</button>
+          <button>Delete</button>
+        </div>
+        <img
+          slot="image"
+          src="https://via.placeholder.com/300x150"
+          alt="Placeholder Image"
+        />
+        <p slot="content">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.
+        </p>
+        <p slot="footer-content">
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+          accusantium doloremque laudantium.
+        </p>
+        <div slot="footer-actions">
+          <button>Share</button>
+          <button>Learn More</button>
+        </div>
+      </card-component>
 
-<card-component>
-  <span slot="badge">AAAA</span>
-  <span slot="title">My Card</span>
-  <span slot="subtitle">This is a subtitle</span>
-  <div slot="header-actions">Actions</div>
-  <img slot="image" src="https://placehold.co/600x400/EEE/31343C" alt="Image" />
-  <div slot="content">This is the body content</div>
-  <div slot="footer-content">Footer Content</div>
-  <div slot="footer-actions">Footer Actions</div>
-</card-component>
-
-<card-component>
-  <span slot="badge">AAAA</span>
-  <span slot="title">My Card</span>
-  <span slot="subtitle">This is a subtitle</span>
-  <div slot="header-actions">Actions</div>
-  <img slot="image" src="https://placehold.co/600x400/EEE/31343C" alt="Image" />
-  <div slot="content">This is the body content</div>
-  <div slot="footer-content">Footer Content</div>
-  <div slot="footer-actions">Footer Actions</div>
-</card-component>
+      <card-component>
+        <span slot="badge">AAAA</span>
+        <span slot="title">My Card</span>
+        <span slot="subtitle">This is a subtitle</span>
+        <div slot="header-actions">Actions</div>
+        <img
+          slot="image"
+          src="https://placehold.co/600x400/EEE/31343C"
+          alt="Image"
+        />
+        <div slot="content">This is the body content</div>
+        <div slot="footer-content">Footer Content</div>
+        <div slot="footer-actions">Footer Actions</div>
+      </card-component>
+    </div>
+    <script src="card-component.js" type="module"></script>
+  </body>
+</html>

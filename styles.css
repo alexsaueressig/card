@@ -1,0 +1,34 @@
+.container {
+  padding: 100px;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+
+:host {
+  display: block;
+  --card-bg: #fff;
+  --card-border-radius: 8px;
+  --card-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  --card-padding: 16px;
+  --header-bg: #f5f5f5;
+  --footer-bg: #f5f5f5;
+  --card-title-color: #333;
+  --card-subtitle-color: #666;
+  --card-body-color: #444;
+  --card-footer-color: #777;
+  --action-color: #007bff;
+  --action-hover-color: #0056b3;
+}
+
+.--theme-red {
+  --card-bg: #ffebee;
+  --header-bg: #ffcdd2;
+  --footer-bg: #ffcdd2;
+  --card-title-color: #c62828;
+  --card-subtitle-color: #b71c1c;
+  --card-body-color: #c62828;
+  --card-footer-color: #b71c1c;
+  --action-color: #d32f2f;
+  --action-hover-color: #b71c1c;
+}
